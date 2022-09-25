@@ -74,17 +74,14 @@
             <div class="inner transition2">
                 <a href="#" class="featured-title">About Me</a>
 
-                <p class="featured-desc">I am a 2nd Year student at the University of St Andrews studying Computer Science. This website is primarly aimed to showcase some of the work I have done / will be doing in the future. I am primarily interesting in Machine Learning and
-                    have been spending some time exploring commonly used algorithms through the book:
-                    <b><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" target="_blank" rel="noopener noreferrer" style="color: #000">
-                    "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow".
-                    </a></b>
-                  <br>
-                  I have put this knowledge into practice during my internship at Arm in summer 2021, where I worked with the CPU team to model the behaviour of various CPU counters such as cache access & clock cycles.
+                <p class="featured-desc">I am a 3rd Year student at the University of St Andrews studying Computer Science. This website is primarly aimed to showcase some of the work I have done.
+                <br><br>
+                In the summer of 2021 I was a Software Engineering Intern in Arm's CPU Team, working primarily in Python. Last summer, I was working in the Central Notifications Platform Team at Meta, as a Software Engineering Intern. I mainly did backend work in Hack with some frontend work done in React. 
                 </p>
             </div>
         </div>
-        <img class="right transition2" src="images/standrews.png" alt="Featured Project">
+        <!-- <img class="right rcorners transition2" src="images/pier-walk.jpg" alt="St Andrews Image"> -->
+        <img class="rounded corners right transition2" src="images/pier-walk.jpg" alt="St Andrews Image">
     </section>
 
     <section class="skills">
@@ -92,22 +89,26 @@
             <ul>
                 <li class="transition2">
                     <div class="icon-container three">
-                        <img src="https://cdn-icons.flaticon.com/png/512/2864/premium/2864069.png?token=exp=1634648758~hmac=c02332b12825af5cfecd0ef0a15a11a5" alt="Web Dev Icon">
+                        <img src="images/briefcase.svg" alt="Work Icon">
                     </div>
-                    <p class="skill-title">Web Development</p>
+                    <p class="skill-title">Experience</p>
                     <p class="featured-desc skill-desc">
-                        HTML
-                        <br/> CSS/SASS
-                        <br/> GSAP
+                        Meta (Facebook) - <br />
+                        Software Engineering Intern
+                        <br/><br />
+                        Arm - <br />
+                        Software Engineering Intern
                     </p>
                 </li>
 
                 <li class="transition2">
                     <div class="icon-container one">
-                        <img src="https://cdn-icons-png.flaticon.com/512/711/711284.png" alt="Programming Languages Icon">
+                        <img src="images/programming-languages.png" alt="Programming Languages Icon">
                     </div>
                     <p class="skill-title">Programming Languages</p>
                     <p class="featured-desc skill-desc">
+                        C++
+                        </br>
                         Java
                         </br>
                         Python
@@ -118,15 +119,17 @@
 
                 <li class="transition2">
                     <div class="icon-container two">
-                        <img src="https://cdn-icons.flaticon.com/png/512/807/premium/807303.png?token=exp=1634648878~hmac=474a2f3a9955841b57c99495726c56da" alt="Tools Icon">
+                        <img src="images/tools.png" alt="Tools Icon">
                     </div>
-                    <p class="skill-title">Other Tools</p>
+                    <p class="skill-title">Libraries & Tools</p>
                     <p class="featured-desc skill-desc">
                         SQL
                         </br>
-                        Adobe Photoshop & XD
-                        <br/> JUnit
+                        Pandas
+                        <br/> NumPy
                         <br/> Git
+                        <br/> Matplotlib
+                        <br/> Streamlit
                     </p>
                 </li>
             </ul>
@@ -134,6 +137,54 @@
     </section>
 
     <section class="portfolio" id="portfolio">
+
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="featured-title">Meta Internship</p>
+                    <p class="featured-desc">• Worked with the Central Notifications Platform team, which builds the frameworks and services that send
+                    notifications for Meta's family of apps (e.g., Facebook, Instagram, and WhatsApp).
+                    <br><br>
+                    • Stopped ~1 billion unnecessary notifications from being logged to our tables daily by identifying and removing a Facebook notification that was not being sent to anyone but was still being generated.
+                    <br><br>
+                    • Modified loggers to increase the probability that the content ID of a notification is logged. The changes reduced the
+                    proportion of null content IDs logged by more than 80%.
+                    <br><br>
+                    • Introduced functionality in two internal tools used across Meta, which allow developers to control the logging rate
+                    of their notification.
+                    <br><br>
+                    • Designed and implemented a smart sampling configuration that logs notifications at a rate decided based on the
+                    notification’s level of importance.
+                    </p>
+                </div>
+            </div>
+            <a href="https://github.com/anuragreggie/Fall-Finder"><img src="images/meta.svg" alt="Program Demo"></a>
+            <!-- Add for border style="border: 2px solid black;" -->
+        </div>
+                
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="featured-title">Arm Internship</p>
+                    <a class="">
+                        <a href="https://github.com/anuragreggie/Fall-Finder" class="">
+                        </a>
+                    </a>
+                    <p class="featured-desc">• Worked with the CPU team to model the behaviour of various CPU counters such as cache access & clock cycles.
+                    <br><br>
+                    • Implemented a data processing pipeline in Python which automatically validates a dump of counter information
+                    from each core and generates further CSV files based on various conditions; therefore helping engineers spot issues.
+                    <br><br>
+                    • The tool is saving over 30 minutes worth of time for each test run (as opposed to manual analysis) and has helped
+                    in spotting an issue with the way the CPUs are released before execution of test code.
+                    <br><br>
+                    • Built a classifier to predict the final state of a CPU based on counter information; this achieved an F-Score of 0.98.
+                    </p>
+                </div>
+            </div>
+            <a href="https://github.com/anuragreggie/Fall-Finder"><img src="images/arm.svg" alt="Program Demo"></a>
+            <!-- Add for border style="border: 2px solid black;" -->
+        </div>
 
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
@@ -171,7 +222,7 @@
             <div class="portfolio-left">
                 <div class="inner">
                     <p class="featured-title">Optiver Trading Competition</p>
-                    <p class="featured-desc">Wrote algorithms in Python in order to execute trades on a simulated trading exchange, with the main aim being to make a profit. I Implemented the logic needed to check the market for potential arbitrage opportunities constantly, if the prices of an asset diverged across markets by a given threshold, the program would execute a trade. Made us of a Relative Strength Index (RSI)implementation to capture trends in market prices and leveraged hedging to offset risks, therefore protecting against large swings in the market. As a result, my team was one of the few teams that generated a profit of over 1 million USD in virtual currency.
+                    <p class="featured-desc">Wrote algorithms in Python in order to execute trades on a simulated trading exchange, with the main aim being to make a profit. I Implemented the logic needed to check the market for potential arbitrage opportunities constantly, if the prices of an asset diverged across markets by a given threshold, the program would execute a trade. Made us of a Relative Strength Index (RSI) implementation to capture trends in market prices and leveraged hedging to offset risks, therefore protecting against large swings in the market. As a result, my team was one of the few teams that generated a profit of over 1 million USD in virtual currency.
                     </p>
                 </div>
             </div>
@@ -263,7 +314,7 @@
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>copyright &copy;2021 anurag suresh</p>
+            <p>copyright &copy;2022 anurag suresh</p>
         </div>
     </footer>
 
